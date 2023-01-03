@@ -1,0 +1,42 @@
+
+h1{
+    /* top right bottom left*/
+    padding: 0 20px 10px 15px;
+    margin: 100px 0 0 0;
+    background: lavender;
+    color: red;
+    font-size: 25px;
+}
+
+h2{
+    /* 50 top 0 right, then 50 on bottom, 0 on left*/
+    padding: 50px 0;
+    border-top: 3px solid darkgreen;
+    border-bottom: 3px solid darkgreen;
+    background: orange;
+
+}
+
+section{
+    border: 10px solid blue;
+    height: 300px;
+    margin-top: 200px
+}
+
+/*
+ * screen is 0
+ * so from 0 to 600px background is green 
+ */
+@media screen and (max-width: 600px) {
+    section{
+        background: green;
+    }
+
+    h1{
+        background: black;
+    }
+
+    h2{
+        background: red;
+    }
+}
